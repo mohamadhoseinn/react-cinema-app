@@ -1,8 +1,10 @@
-const { combineReducers } = require("redux");
+import { combineReducers } from "redux";
+import errorReducer from "./errorReducer";
+import movieReducer from "./movieReducer";
 
 const rootReducer = combineReducers({
-  errors: "",
-  movies: "",
+  errors: errorReducer,
+  movies: movieReducer,
 });
 
 export default rootReducer;
